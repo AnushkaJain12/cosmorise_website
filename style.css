@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); 
+@import './utilities.css' ;
+
+
+
+
+*{
+    padding:0 ;
+    margin : 0 ;
+    box-sizing:border-box ;
+
+}
+
+body {
+
+    font-family: 'Montserrat' , sans-serif;
+    background-color: #1E1E1E;
+}
+
+header {
+    background: linear-gradient(135deg, rgba(0,0,0,1),rgba(0,0,0,0.2)),
+    url(./img/sunrise.jpg);
+    min-height: 100vh;
+    background-size: cover; }
+
+
+header nav {
+    padding : 20px 40px 20px 100px ;
+    display: grid;
+    align-items: center;
+    border-bottom: 1px solid #1d1d1d;
+    grid-template-columns: 1fr 2fr;
+}
+
+header nav .nav-right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav .nav-right a {
+    text-decoration:none ;
+    color : white ;
+    margin-right: 30px;
+    position: relative;
+}
+
+
+header nav .nav-right a:after {
+   content:'';
+   position: absolute;
+   left:0;
+   bottom: -25px;
+   width: 0;
+   height:2px ;
+   background: white;
+   transition: width .3s ease-in-out ;
+
+}
+
+header nav .nav-right a:hover:after {
+    width: 70%;
+}
+
+header nav .nav-right a.home:after {
+    width: 4px;
+}
+
+header nav .nav-right .search > div {
+    background:#121212;
+    display:flex ;
+    align-items: center;
+    padding: 10px 15px ;
+    border-radius : 50px ;
+}
+
+header nav .nav-right .search > div input {
+
+    background : transparent ;
+    border : none ;
+    outline: none;
+    font-size:16px;
+    color: white;
+
+}
+
+header nav .nav-right .search > div img{
+    padding-right: 16px;
+}
+
+
+.hero {
+    position: relative;
+    
+}
+
+
+.hero .cta{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: calc(100vh-80px);
+    color: white;
+   
+}
+
+.hero .cta .abc {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+    opacity:0.5;
+    
+}
+
+.hero .cta >div {
+    flex :1 ;
+
+}
+
+.hero .cta .left-section {
+
+    padding-top: 320px;
+    padding-left: 90px;  
+}
+
+.hero .cta .imge{
+    padding-top: 100px;
+    margin-left: 200px;
+}
+
+
+
+section.strip {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background:#121212;
+    padding: 20px 0;
+}
+
+section.strip .h3{
+    color: white;
+    font-weight: normal;
+} 
+
+
+section.rocket {
+    display: grid;
+    grid-template-columns: 1fr  1fr 1fr;
+    grid-gap: 80px;
+    padding: 100px 0;
+}
+
+section.rocket .block .with-underline {
+    position: relative;
+    margin-bottom: 38px;
+    color: white;
+    padding-top: 50px;
+    /* text-decoration: underline ; */
+
+   
+}
+
+section.rocket .left-block {
+    padding-left: 50px;
+    color: white;
+    
+}
+
+
+section.rocket .right-block {
+    padding-right: 100px;
+    padding-top: 100px;
+    color:white ;
+    
+}
+
+section.rocket .right-block .shift{
+    padding-top: 20px;
+}
+
+section.rocket .right-block .second-stage{
+    padding-top: 100px;
+}
+
+
+footer {
+    background:#121212 ;
+    padding: 60px 0;
+    color: white;
+}
+
+footer > div {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+ }
+
+ footer .copyright span {
+    font-size: 12px;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+footer .copyright img {
+    height: 20px;
+    margin-bottom: 10px;
+
+}
+
+footer h1 {
+    font-size: 18px;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+footer h1:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    display: block;
+    width: 60px;
+    height: 2px;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer ul li:nth-child(even) {
+    margin: 10px 0;
+ }
+
+ footer ul li a {
+    color: #b9b8b8;
+    text-decoration: none;
+    font-size: 14px;
+    transition: all .3s ease-in-out;
+}
+
+footer ul li a:hover {
+    color:#ffffff;
+ }
+
+ footer .footer-socials a {
+    margin-right: 20px;
+   
+}
+
+footer .footer-socials a:hover {
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
